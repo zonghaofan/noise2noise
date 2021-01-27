@@ -22,14 +22,7 @@ cuda9.0+
 
 ### 5.some examples
 
-<<<<<<< HEAD
-![]([https://github.com/zonghaofan/noise2noise/blob/main/Screenshot%20from%202020-10-30%2017-26-41.png](https://github.com/zonghaofan/noise2noise/blob/main/Screenshot from 2020-10-30 17-26-41.png)
-=======
-![](https://github.com/zonghaofan/noise2noise/blob/main/Screenshot%20from%202020-10-30%2017-26-41.png)
+![][https://github.com/zonghaofan/noise2noise/blob/main/Screenshot%20from%202020-10-30%2017-26-41.png]
 
-![](https://github.com/zonghaofan/noise2noise/blob/main/Screenshot%20from%202020-10-30%2017-26-54.png)
-
->>>>>>> 1ffebf7e41bc56c25d5190c64adc91d9412c4814
-
-![]([https://github.com/zonghaofan/noise2noise/blob/main/Screenshot%20from%202020-10-30%2017-26-54.png](https://github.com/zonghaofan/noise2noise/blob/main/Screenshot from 2020-10-30 17-26-54.png)
+![]([https://github.com/zonghaofan/noise2noise/blob/main/Screenshot%20from%202020-10-30%2017-26-54.png]
 
