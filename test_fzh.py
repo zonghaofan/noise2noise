@@ -4,7 +4,7 @@ import torch.nn as nn
 import os
 import cv2
 from test_datasets import load_dataset
-from noise2noise import Noise2Noise
+from noise2noise_fzh import Noise2Noise
 import torchvision.transforms.functional as tvF
 from argparse import ArgumentParser
 from PIL import Image
@@ -21,7 +21,7 @@ def parse_args():
     parser.add_argument('--load-ckpt', help='load model checkpoint',
                         default='/red_detection/noise2noise/ckpts/text-0121/n2n-epoch11-0.00248.pth')
     parser.add_argument('--pretrain-model-path', help='pretrain model path',
-                        default='/red_detection/noise2noise/ckpts/text-0429/n2n-epoch6-0.00323.pth')
+                        default='/red_detection/noise2noise/ckpts/text-1446/n2n-epoch28-0.00204.pth')
     parser.add_argument('--show-output', help='pop up window to display outputs', default=0, type=int)
     parser.add_argument('--cuda', help='use cuda', default=True, action='store_true')
 
@@ -74,10 +74,10 @@ def _resize(img):
     Works with list so that all items get the same cropped window (e.g. for buffers).
     """
     img = Image.fromarray(img).convert('RGB')
-    # img = tvF.resize(img, (640, 640))
-    w, h = img.size
-    new_h, new_w = resize_image(np.array(img))#, min(w, h), max(w, h))
-    img = tvF.resize(img, (new_w, new_h))
+    img = tvF.resize(img, (640, 640))
+    # w, h = img.size
+    # new_h, new_w = resize_image(np.array(img))#, min(w, h), max(w, h))
+    # img = tvF.resize(img, (new_w, new_h))
 
     source_img = tvF.to_tensor(img)
     return torch.unsqueeze(source_img, dim=0)
